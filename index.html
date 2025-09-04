@@ -237,49 +237,40 @@
 
     .date-label { font-weight: 600; margin-bottom: 5px; }
 
-    /* ===== 모바일 레이아웃 (<= 480px) ===== */
-    @media (max-width: 480px) {
-      body { font-size: 15px; } /* 본문 축소 */
+/* ===== 모바일 레이아웃 (<= 480px) ===== */
+@media (max-width: 480px) {
+  body { font-size: 14px; line-height: 1.5; }
 
-      .main-container { padding: 0 8px; }
-      .logo-section img { height: 36px !important; max-width: 120px !important; }
+  .header-box h1 { font-size: 1.3rem; }
+  .update-badge { font-size: 0.8rem; }
 
-      .header-box { padding: 16px 18px; border-radius: 8px; }
-      .update-badge { padding: 5px 12px; }
+  .notice-title { font-size: 0.95rem; }
+  .notice-list li { font-size: 0.9rem; }
 
-      .notice-box { padding: 16px 18px; border-radius: 10px; }
+  .category h2 { font-size: 1.05rem; }
+  .checklist-item label { font-size: 0.9rem; }
 
-      .checklist-item {
-        padding: 14px 12px;
-        margin-bottom: 10px;
-        gap: 10px;
-        flex-wrap: wrap;          /* 좁은 화면 줄바꿈 */
-      }
+  .radio-option span { font-size: 1rem; }
+  .radio-option input[type="radio"] { width: 20px; height: 20px; }
 
-      .checklist-item label {
-        flex-basis: 100%;         /* 라벨을 위 줄에 */
-      }
+  .score-display { font-size: 1.6rem; }
+  .score-text { font-size: 0.95rem; }
+  .grade { font-size: 1rem; }
 
-      .checkbox-container {
-        width: 100%;
-        justify-content: flex-end; /* O/X를 오른쪽 정렬 */
-        gap: 16px;
-      }
+  .btn { font-size: 0.9rem; padding: 9px 14px; }
 
-      .progress-bar { height: 6px; }
-      .button-group { gap: 10px; }
-      .btn { padding: 10px 14px; border-radius: 20px; }
+  .date-section { font-size: 0.85rem; }
+}
 
-      .date-section { padding: 16px 18px; }
-    }
+/* ===== 초소형 디스플레이 (<= 360px) ===== */
+@media (max-width: 360px) {
+  body { font-size: 13px; }
 
-    /* ===== 아주 작은 디스플레이 (<= 360px) ===== */
-    @media (max-width: 360px) {
-      body { font-size: 14px; }
-      .header-box { padding: 14px; }
-      .checklist-item { padding: 12px 10px; }
-      .btn { padding: 9px 12px; }
-    }
+  .header-box h1 { font-size: 1.15rem; }
+  .category h2 { font-size: 1rem; }
+  .checklist-item label { font-size: 0.85rem; }
+  .score-display { font-size: 1.4rem; }
+}
   </style>
 </head>
 <body>
@@ -779,3 +770,4 @@
   </script>
 </body>
 </html>
+
