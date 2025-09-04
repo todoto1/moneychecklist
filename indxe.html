@@ -25,6 +25,20 @@
             margin: 0 auto;
         }
         
+        .logo-section {
+            text-align: center;
+            padding: 20px 0;
+            background: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000cfe;
+            letter-spacing: -1px;
+        }
+        
         .header-box {
             background: #000cfe;
             color: white;
@@ -164,13 +178,7 @@
         .score-display {
             font-size: 2.8em;
             font-weight: bold;
-            margin: 20px 0;
-        }
-        
-        .score-text {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            opacity: 0.9;
+            margin: 20px 0 15px 0;
         }
         
         .grade {
@@ -179,13 +187,19 @@
             border-radius: 25px;
             font-size: 1.2em;
             font-weight: bold;
-            margin: 15px 0;
+            margin: 0 0 20px 0;
         }
         
         .grade-excellent { background: #28a745; }
         .grade-good { background: #007bff; }
         .grade-fair { background: #ffc107; color: #333; }
         .grade-poor { background: #dc3545; }
+        
+        .score-text {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
         
         .progress-bar {
             width: 100%;
@@ -225,22 +239,23 @@
         }
         
         .btn-reset {
-            background: #dc3545;
+            background: #6c757d;
             color: white;
         }
         
         .btn-reset:hover {
-            background: #c82333;
+            background: #5a6268;
             transform: translateY(-2px);
         }
         
         .btn-share {
-            background: #28a745;
-            color: white;
+            background: white;
+            color: #000cfe;
+            border: 2px solid #000cfe;
         }
         
         .btn-share:hover {
-            background: #218838;
+            background: #f8f9fa;
             transform: translateY(-2px);
         }
         
@@ -261,6 +276,11 @@
 </head>
 <body>
     <div class="main-container">
+        <!-- 로고 섹션 -->
+        <div class="logo-section">
+            <img src="https://cdn.imweb.me/upload/S202312213f075e1a6dec0/833be6e4f727b.png" alt="투두투 로고">
+        </div>
+        
         <!-- 헤더 박스 -->
         <div class="header-box">
             <div class="update-badge">자산 관리 점검</div>
@@ -654,8 +674,8 @@
                     <div class="progress-fill" id="progressFill"></div>
                 </div>
                 <div class="score-display" id="scoreDisplay">0/25</div>
-                <div class="score-text" id="scoreText">체크리스트를 완성해주세요</div>
                 <div class="grade" id="grade" style="display: none;"></div>
+                <div class="score-text" id="scoreText">체크리스트를 완성해주세요</div>
                 <div class="button-group">
                     <button class="btn btn-reset" onclick="resetChecklist()">다시 시작</button>
                     <button class="btn btn-share" onclick="shareResults()">공유하기</button>
