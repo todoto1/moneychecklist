@@ -770,17 +770,15 @@
         
         function shareResults() {
             const currentUrl = window.location.href;
-            const shareText = `💰 자산 관리 체크리스트를 해보세요!
-📊 나의 재정 상태를 점검해보고 개선 방향을 찾아보세요.
+            const shareText = `💰 투두투와 함께 자산 관리 체크리스트를 해보세요!
 
 👉 체크리스트 바로가기: ${currentUrl}
-
-#자산관리 #재정관리 #체크리스트`;
+;
             
             // 클립보드 복사를 우선으로 시도
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(shareText).then(() => {
-                    alert('📋 체크리스트 링크가 클립보드에 복사되었습니다!\n다른 사람에게 공유해보세요.');
+                    alert('📋 체크리스트 링크가 복사되었습니다!\n다른 사람에게 공유해보세요.');
                 }).catch(() => {
                     fallbackCopyTextToClipboard(shareText);
                 });
@@ -852,4 +850,5 @@
     </script>
 </body>
 </html>
+
 
